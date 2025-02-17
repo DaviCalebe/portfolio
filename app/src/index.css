@@ -1,9 +1,9 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: gt, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-/*   font-family: europa, sans-serif;
- */}
+/*   font-family: gt, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+ */  font-family: 'JetBrains Mono', monospace;
+}
 
 :root{
   --base-color: #000;
