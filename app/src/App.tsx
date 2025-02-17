@@ -1,14 +1,13 @@
-import './App.css'
+import './App.css';
+import { ToggleNav } from './components/toggle-nav';
 
 function App() {
 
   return (
-    <>
-      <header>
-        <h1>hello world</h1>
-      </header>
-    </>
+    <main>
+      <ToggleNav />
+    </main>
   )
 }
 
-export default App
+export default App;

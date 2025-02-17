@@ -11,3 +11,7 @@
   --secondary-color: #817299;
   --tertiary-color: #A50C0E;
  }
+
+[data-theme="light"]{
+  --base-color: #fff;
+ }
