@@ -2,7 +2,7 @@ import './App.css';
 import { ToggleNav } from './components/toggle-nav';
 import brazilflag from './assets/brazil-flag.svg'
 import usaflag from './assets/usa-flag.svg'
-import element from './assets/element.svg'
+import element from './assets/element1.svg'
 
 function App() {
 
@@ -27,7 +27,10 @@ function App() {
       </div>
 
       <section className="about">
-        <img src={element} className='default-element' alt="figma-element" />
+        <svg className='reversed-element' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="var(--base-color)"></path>
+        </svg>
+
         <svg viewBox="0 0 900 900" className="target-svg"> 
           <circle cx="450" cy="450" r="450" stroke="black" strokeWidth="2" fill="none" />
           <circle cx="450" cy="450" r="360" stroke="black" strokeWidth="2" fill="none" />
@@ -43,9 +46,14 @@ function App() {
 
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
         </div>
-        <img src={element} className='reversed-element' alt="figma-element" />
+        <svg className='default-element' data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="var(--base-color)"></path>
+        </svg>
       </section>
 
+      <section className="road">
+        <h1>A estrada até aqui...</h1>
+      </section>
 
     </main>
   )
