@@ -27,16 +27,21 @@ function App() {
       </div>
 
       <section className="about">
-        <img src={element} alt="figma-element" />
-          <svg viewBox="0 0 900 900" className="target-svg"> 
-            <circle cx="450" cy="450" r="450" stroke="black" strokeWidth="2" fill="none" />
-            <circle cx="450" cy="450" r="360" stroke="black" strokeWidth="2" fill="none" />
-            <circle cx="450" cy="450" r="260" stroke="black" strokeWidth="2" fill="none" />
-            <circle cx="450" cy="450" r="190" stroke="black" strokeWidth="2" fill="none" />
-            <circle cx="450" cy="450" r="90" stroke="black" strokeWidth="2" fill="#AC9BBC" />
-            <circle cx="450" cy="450" r="20" fill="black" />
-          </svg>
+        <img src={element} className='default-element' alt="figma-element" />
+        <svg viewBox="0 0 900 900" className="target-svg"> 
+          <circle cx="450" cy="450" r="450" stroke="black" strokeWidth="2" fill="none" />
+          <circle cx="450" cy="450" r="360" stroke="black" strokeWidth="2" fill="none" />
+          <circle cx="450" cy="450" r="260" stroke="black" strokeWidth="2" fill="none" />
+          <circle cx="450" cy="450" r="190" stroke="black" strokeWidth="2" fill="none" />
+          <circle cx="450" cy="450" r="90" stroke="black" strokeWidth="2" fill="#AC9BBC" />
+          <circle cx="450" cy="450" r="20" fill="black" />
+        </svg>
         <div className="about-content">
+          <h1>SOBRE MIM</h1>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
+
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
         </div>
         <img src={element} className='reversed-element' alt="figma-element" />
       </section>
