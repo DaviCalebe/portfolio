@@ -3,26 +3,32 @@ import lightmode from '../assets/light-mode.svg';
 import darkmode from '../assets/dark-mode.svg';
 import brazilflag from '../assets/brazil-flag.svg';
 import usaflag from '../assets/usa-flag.svg';
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 export const ToggleNav = () => {
+  const [isLightMode, setIsLightMode] = useState(true);
+
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme === 'dark') {
       document.querySelector('body')?.setAttribute('data-theme', 'dark');
+      setIsLightMode(false); // Atualiza o estado para escuro
     } else {
       document.querySelector('body')?.setAttribute('data-theme', 'light');
+      setIsLightMode(true); // Atualiza o estado para claro
     }
   }, []); 
 
   const setDarkMode = () => {
     document.querySelector('body')?.setAttribute('data-theme', 'dark');
     localStorage.setItem('theme', 'dark'); 
+    setIsLightMode(false); // Atualiza o estado para escuro
   };
 
   const setLightMode = () => {
     document.querySelector('body')?.setAttribute('data-theme', 'light');
     localStorage.setItem('theme', 'light'); 
+    setIsLightMode(true); // Atualiza o estado para claro
   };
 
   const toggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -33,15 +39,13 @@ export const ToggleNav = () => {
     }
   };
 
-  const defaultChecked = localStorage.getItem('theme') === 'light';
-
   return (
     <header>
       <label>
         <input
           type="checkbox"
           onChange={toggleTheme}
-          defaultChecked={defaultChecked}
+          checked={isLightMode} // Usa o estado para controlar o checkbox
         />
         <img src={darkmode} className="darkmode" alt="darkmode" />
         <img src={lightmode} className="lightmode" alt="lightmode" />
