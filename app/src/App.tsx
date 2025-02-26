@@ -2,7 +2,6 @@ import './App.css';
 import { ToggleNav } from './components/toggle-nav';
 import brazilflag from './assets/brazil-flag.svg'
 import usaflag from './assets/usa-flag.svg'
-import element from './assets/element1.svg'
 
 function App() {
 
@@ -31,14 +30,15 @@ function App() {
             <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="var(--base-color)"></path>
         </svg>
 
-        <svg viewBox="0 0 900 900" className="target-svg"> 
-          <circle cx="450" cy="450" r="450" stroke="black" strokeWidth="2" fill="none" />
-          <circle cx="450" cy="450" r="360" stroke="black" strokeWidth="2" fill="none" />
-          <circle cx="450" cy="450" r="260" stroke="black" strokeWidth="2" fill="none" />
-          <circle cx="450" cy="450" r="190" stroke="black" strokeWidth="2" fill="none" />
-          <circle cx="450" cy="450" r="90" stroke="black" strokeWidth="2" fill="#AC9BBC" />
-          <circle cx="450" cy="450" r="20" fill="black" />
+        <svg viewBox="0 0 3000 1600" className="target-svg">
+          <circle cx="1500" cy="800" r="1400" stroke="black" strokeWidth="2" fill="none" />
+          <circle cx="1500" cy="800" r="1050" stroke="black" strokeWidth="2" fill="none" />
+          <circle cx="1500" cy="800" r="800" stroke="black" strokeWidth="2" fill="none" />
+          <circle cx="1500" cy="800" r="500" stroke="black" strokeWidth="2" fill="none" />
+          <circle cx="1500" cy="800" r="150" stroke="black" strokeWidth="2" fill="#AC9BBC" />
+          <circle cx="1500" cy="800" r="30" fill="black" />
         </svg>
+
         <div className="about-content">
           <h1>SOBRE MIM</h1>
           
