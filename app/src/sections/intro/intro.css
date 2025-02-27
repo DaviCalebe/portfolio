@@ -1,0 +1,90 @@
+.intro{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    padding: 3rem;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+#name{
+    font-size: 96px;
+    font-weight: 400;
+    color: var(--primary-color);
+}
+
+.occupation{
+    font-size: 32px;
+    color: var(--secondary-color);
+}
+
+.profile-pic{
+    display: flex;
+    position: relative;
+}
+
+.circle{
+    background-color: var(--tertiary-color);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+}
+
+.circle-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url(../../assets/calebe.jpg);
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+}
+
+.cv-buttons{
+    display: flex;
+    gap: 20px;
+}
+
+.cv-buttons button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 32px;
+    background-color: transparent;
+    color: var(--secondary-color);
+    width: 130px;
+    height: 45px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cv-buttons button img{
+    width: 30px;
+    height: 30px;
+}
+
+@media (max-width: 1120px){
+    .intro{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .description{
+        order: 2;
+    }
+
+    .profile-pic{
+        order: 1;
+    }
+}
