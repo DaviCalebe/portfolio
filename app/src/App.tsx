@@ -11,7 +11,7 @@ function App() {
       <Intro />
       <About />
 
-      <section className="road">
+      <section className="bg-primary flex items-center justify-center h-screen text-2xl font-bold">
         <h1>A estrada até aqui...</h1>
       </section>
 

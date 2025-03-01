@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 *{
   padding: 0;
   margin: 0;
@@ -7,11 +9,15 @@
  */  font-family: 'JetBrains Mono', monospace;
 }
 
-:root{
+@theme {
   --base-color: #000;
   --primary-color: #541185;
   --secondary-color: #817299;
   --tertiary-color: #A50C0E;
+  --color-base: #000;
+  --color-primary: #541185;
+  --color-secondary: #817299;
+  --color-tertiary: #A50C0E;
  }
 
 [data-theme="light"]{
