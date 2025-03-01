@@ -56,7 +56,7 @@ export const ToggleNav = () => {
   };
 
   return (
-    <header className="flex justify-between h-12">
+    <header className="flex justify-between h-16 p-2">
       <label className="relative flex items-center cursor-pointer">
         <input
           type="checkbox"
