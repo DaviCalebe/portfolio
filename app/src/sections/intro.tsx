@@ -28,7 +28,7 @@ const Intro = () => {
       <div className="relative flex">
         <div className="bg-tertiary w-[600px] h-[600px] rounded-full"></div>
         <div
-          className="absolute top-0 right-0 bg-cover w-[550px] h-[550px] rounded-full"
+          className="absolute top-0 right-0 bg-cover w-[90%] h-[90%] rounded-full"
           style={{ backgroundImage: `url(${profilePic})` }}
         ></div>
       </div>
