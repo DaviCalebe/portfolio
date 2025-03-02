@@ -1,7 +1,7 @@
 import './App.css';
 import { ToggleNav } from './components/toggle-nav';
 import Intro from './sections/intro';
-import About from './sections/about/about';
+import About from './sections/about';
 
 function App() {
 
