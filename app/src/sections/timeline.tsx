@@ -1,5 +1,3 @@
-import './timeline.css';
-
 const Timeline = () => {
     return (
         <section>
