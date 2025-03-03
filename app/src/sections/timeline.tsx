@@ -8,7 +8,7 @@ import typescript from "../assets/typescript.svg";
 
 const Timeline = () => {
     return (
-        <section className="p-8">
+        <section className="px-8 py-10">
             <h1 className="text-5xl text-center text-tertiary uppercase py-8">A estrada até aqui...</h1>
 
             <div className="mx-auto grid grid-cols-9">

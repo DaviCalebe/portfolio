@@ -3,6 +3,7 @@ import { ToggleNav } from './components/toggle-nav';
 import Intro from './sections/intro';
 import About from './sections/about';
 import Timeline from './sections/timeline';
+import Projects from './sections/projects';
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
       <Intro />
       <About />
       <Timeline />
+      <Projects />
     </main>
   )
 }
