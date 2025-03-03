@@ -4,7 +4,7 @@ import profilePic from '../assets/calebe.jpg';
 
 const Intro = () => {
   return (
-    <section className="grid md:grid-cols-2 place-items-center p-12 gap-10">
+    <section className="bg-base grid md:grid-cols-2 place-items-center p-12 gap-10">
       <div className="flex flex-col items-center text-center gap-2">
         <h1 className="text-[96px] font-light text-primary">{'<'}Davi Calebe{'/>'}</h1>
         <p className="text-4xl text-secondary">dev full-stack</p>

@@ -1,6 +1,14 @@
+import tailwind from "../assets/tailwind.svg";
+import html from "../assets/html-5.svg";
+import css from "../assets/css-3.svg";
+import bootstrap from "../assets/bootstrap.svg";
+import react from "../assets/react.svg";
+import javascript from "../assets/javascript.svg";
+import typescript from "../assets/typescript.svg";
+
 const Timeline = () => {
     return (
-        <section className="">
+        <section className="p-8">
             <h1 className="text-5xl text-center text-tertiary uppercase py-8">A estrada até aqui...</h1>
 
             <div className="mx-auto grid grid-cols-9">
@@ -8,7 +16,7 @@ const Timeline = () => {
                 {/* STEP 1 */}
 
                 <div className="col-span-4 w-full h-full">
-                    <div className="w-full h-full rounded-md p-4">
+                    <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
                         <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
                     </div>
@@ -37,7 +45,7 @@ const Timeline = () => {
                 </div>
 
                 <div className="col-span-4 w-full h-full">
-                    <div className="w-full h-full rounded-md p-4">
+                    <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
                         <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
                     </div>
@@ -46,7 +54,7 @@ const Timeline = () => {
                 {/* STEP 3 */}
                 
                 <div className="col-span-4 w-full h-full">
-                    <div className="w-full h-full rounded-md p-4">
+                    <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
                         <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
                     </div>
@@ -75,13 +83,24 @@ const Timeline = () => {
                 </div>
 
                 <div className="col-span-4 w-full h-full">
-                    <div className="w-full h-full rounded-md p-4">
+                    <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
                         <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
                     </div>
                 </div>
             </div>
 
+            <h1 className="text-5xl text-center text-tertiary uppercase py-8">SKILLS</h1>
+
+            <div className="flex flex-wrap justify-center items-center px-10 gap-10">
+                <img src={html} alt="html" className="w-20 h-20"/>
+                <img src={css} alt="css" className="w-20 h-20"/>
+                <img src={bootstrap} alt="bootstrap" className="w-20 h-20"/>
+                <img src={react} alt="react" className="w-20 h-20"/>
+                <img src={javascript} alt="javascript" className="w-20 h-20"/>
+                <img src={typescript} alt="typescript" className="w-20 h-20"/>
+                <img src={tailwind} alt="tailwind" className="w-20 h-20"/>
+            </div>
         </section>
     )
 }
