@@ -32,49 +32,49 @@ const Contact = () => {
                 <p className="text-2xl font-bold text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ad, sunt ipsum quisquam harum neque quos ducimus aut sint incidunt! Dolor dolorem iusto repudiandae id nihil, minus cupiditate libero commodi?</p>
             </div>
 
-            <div className="bg-secondary w-px h-9/12"></div>
+            <div className="bg-secondary w-px h-11/12"></div>
             
             <div className="flex-1 p-15">
                 <form
                 onSubmit={handleSubmit(onSubmit)}
-                className="max-w-sm mx-auto p-4 space-y-4 text-secondary text-xl rounded-lg"
+                className="max-w-xl mx-auto p-4 space-y-4 text-secondary text-xl rounded-lg"
                 >
-                <div className="flex flex-col gap-3">
-                    <label className="block text-4xl">Nome</label>
-                    <input
-                    {...register("nome")}
-                    className="w-full p-2 bg-[#191919] text-white rounded"
-                    />
-                    {errors.nome && <p className="text-red-500">{errors.nome.message}</p>}
-                </div>
+                  <div className="flex flex-col gap-3">
+                      <label className="block text-4xl">Nome</label>
+                      <input
+                      {...register("nome")}
+                      className="w-full p-2 bg-[#191919] text-white rounded"
+                      />
+                      {errors.nome && <p className="text-red-500">{errors.nome.message}</p>}
+                  </div>
 
-                <div className="flex flex-col gap-3">
-                    <label className="block text-4xl">E-mail</label>
-                    <input
-                    {...register("email")}
-                    type="email"
-                    className="w-full p-2 bg-[#191919] text-white rounded"
-                    />
-                    {errors.email && <p className="text-red-500">{errors.email.message}</p>}
-                </div>
+                  <div className="flex flex-col gap-3">
+                      <label className="block text-4xl">E-mail</label>
+                      <input
+                      {...register("email")}
+                      type="email"
+                      className="w-full p-2 bg-[#191919] text-white rounded"
+                      />
+                      {errors.email && <p className="text-red-500">{errors.email.message}</p>}
+                  </div>
 
-                <div className="flex flex-col gap-3">
-                    <label className="block text-4xl">Mensagem</label>
-                    <textarea
-                    {...register("mensagem")}
-                    className="w-full h-48 p-2 bg-[#191919] text-white rounded"
-                    />
-                    {errors.mensagem && (
-                    <p className="text-red-500">{errors.mensagem.message}</p>
-                    )}
-                </div>
+                  <div className="flex flex-col gap-3">
+                      <label className="block text-4xl">Mensagem</label>
+                      <textarea
+                      {...register("mensagem")}
+                      className="w-full h-48 p-2 bg-[#191919] text-white rounded"
+                      />
+                      {errors.mensagem && (
+                      <p className="text-red-500">{errors.mensagem.message}</p>
+                      )}
+                  </div>
 
-                <button
-                    type="submit"
-                    className="text-4xl w-full p-2 bg-[#191919] hover:bg-[rgba(25,25,25,0.7)] rounded"
-                >
-                    ENVIAR
-                </button>
+                  <button
+                      type="submit"
+                      className="text-4xl w-full p-2 bg-[#191919] hover:bg-[rgba(25,25,25,0.7)] rounded"
+                  >
+                      ENVIAR
+                  </button>
                 </form>
             </div>
         </div>

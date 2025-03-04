@@ -6,13 +6,15 @@ const Projects = () => {
         "Cardápio Digital",
         "Site de Streaming",
       ];
+
+    const totalProjects = projectsData.length;
     
     return (
-        <section className="bg-secondary text-white grid grid-cols-2 gap-10 min-h-[45rem] p-8">
+        <section className="bg-secondary text-white grid grid-cols-2 gap-10 min-h-[45rem] h-screen p-8">
             <div className="flex flex-col">
                 <div className="flex justify-between border-b-2 border-black">
                     <h1 className="text-5xl uppercase">Projetos</h1>
-                    <h1 className="text-5xl">4</h1>
+                    <h1 className="text-5xl">{totalProjects}</h1>
                 </div>
                 <ul className="py-2 space-y-2">
                     {projectsData.map((project, index) => (

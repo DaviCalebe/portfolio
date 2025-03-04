@@ -1,10 +1,13 @@
-import tailwind from "../assets/tailwind.svg";
 import html from "../assets/html-5.svg";
 import css from "../assets/css-3.svg";
 import bootstrap from "../assets/bootstrap.svg";
 import react from "../assets/react.svg";
 import javascript from "../assets/javascript.svg";
 import typescript from "../assets/typescript.svg";
+import tailwind from "../assets/tailwind.svg";
+import node from "../assets/node-js.svg";
+import python from "../assets/python.svg";
+import java from "../assets/java.svg";
 
 const Timeline = () => {
     return (
@@ -100,6 +103,9 @@ const Timeline = () => {
                 <img src={javascript} alt="javascript" className="w-20 h-20"/>
                 <img src={typescript} alt="typescript" className="w-20 h-20"/>
                 <img src={tailwind} alt="tailwind" className="w-20 h-20"/>
+                <img src={node} alt="node-js" className="w-20 h-20"/>
+                <img src={python} alt="python" className="w-20 h-20"/>
+                <img src={java} alt="java" className="w-20 h-20"/>
             </div>
         </section>
     )
