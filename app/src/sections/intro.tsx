@@ -1,8 +1,15 @@
+"use client"
+
+import { motion } from "framer-motion";
+import { useRef } from "react";
+
 import brazilflag from '../assets/brazil-flag.svg';
 import usaflag from '../assets/usa-flag.svg';
 import profilePic from '../assets/calebe.jpg';
 
 const Intro = () => {
+  const constraintsRef = useRef<HTMLDivElement>(null)
+
   return (
     <section className="bg-base grid md:grid-cols-2 place-items-center p-12 gap-10">
       <div className="flex flex-col items-center text-center gap-2">
@@ -26,11 +33,15 @@ const Intro = () => {
       </div>
 
       <div className="relative flex">
-        <div className="bg-tertiary w-[600px] h-[600px] rounded-full"></div>
-        <div
-          className="absolute top-0 right-0 bg-cover w-[90%] h-[90%] rounded-full"
-          style={{ backgroundImage: `url(${profilePic})` }}
-        ></div>
+      <motion.div ref={constraintsRef} className="bg-tertiary w-[600px] h-[600px] rounded-full">
+            <motion.div
+                drag
+                dragConstraints={constraintsRef}
+                dragElastic={0.2}
+                className="absolute top-0 right-0 bg-cover w-[90%] h-[90%] rounded-full"
+                style={{ backgroundImage: `url(${profilePic})` }}
+            />
+        </motion.div>
       </div>
     </section>
   );
