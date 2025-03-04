@@ -1,7 +1,7 @@
 const About = () => {
   return (
       <section className="relative flex justify-center min-h-[55rem] h-auto overflow-hidden bg-[#C6B7CE]">
-          <svg className="absolute top-0 -mt-px z-5 rotate-180 text-base" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <svg className="absolute top-0 -mt-px z-10 rotate-180 text-base" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="currentColor"></path>
           </svg>
           
@@ -15,14 +15,14 @@ const About = () => {
           </svg>
           
           <div className="relative flex flex-col items-center self-center gap-19 text-center">
-              <h1 className="text-5xl font-semibold max-w-[800px] z-5">SOBRE MIM</h1>
+              <h1 className="text-5xl font-semibold max-w-[800px] z-10">SOBRE MIM</h1>
               
-              <p className="text-3xl font-medium max-w-[800px] z-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
+              <p className="text-3xl font-medium max-w-[800px] z-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
               
-              <p className="text-3xl font-medium max-w-[800px] z-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
+              <p className="text-3xl font-medium max-w-[800px] z-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
           </div>
           
-          <svg className="absolute bottom-0 -mb-px z-5 text-base" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <svg className="absolute bottom-0 -mb-px z-10 text-base" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
               <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" fill="currentColor"></path>
           </svg>
       </section>
