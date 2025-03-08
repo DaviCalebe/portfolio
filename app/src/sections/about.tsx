@@ -14,7 +14,7 @@ const About = () => {
               <circle cx="1500" cy="800" r="30" fill="black" />
           </svg>
           
-          <div className="relative flex flex-col items-center self-center gap-19 text-center">
+          <div className="relative flex flex-col self-start mt-15 gap-19 text-center">
               <h1 className="text-5xl font-semibold max-w-[800px] z-10">SOBRE MIM</h1>
               
               <p className="text-3xl font-medium max-w-[800px] z-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>

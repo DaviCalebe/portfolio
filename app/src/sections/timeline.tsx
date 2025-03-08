@@ -18,7 +18,7 @@ const Timeline = () => {
 
                 {/* STEP 1 */}
 
-                <div className="col-span-4 w-full h-full">
+                <div className="appear-left col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
                         <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
@@ -47,7 +47,7 @@ const Timeline = () => {
                     </div>
                 </div>
 
-                <div className="col-span-4 w-full h-full">
+                <div className="appear-right col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
                         <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
@@ -56,7 +56,7 @@ const Timeline = () => {
 
                 {/* STEP 3 */}
                 
-                <div className="col-span-4 w-full h-full">
+                <div className="appear-left col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
                         <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
@@ -85,7 +85,7 @@ const Timeline = () => {
                     </div>
                 </div>
 
-                <div className="col-span-4 w-full h-full">
+                <div className="appear-right col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
                         <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
