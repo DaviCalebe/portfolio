@@ -20,13 +20,28 @@ export const SocialMedias = () => {
                 style={{ clipPath: "inset(0 0 0 -2rem)" }} // Evita rolagem horizontal
             >
                 <div className="bg-base p-4 rotate-45">
-                    <img src={github} alt="github" className="relative z-50 w-10 -rotate-45 hover:scale-150 hover:z-50 transition-transform" />
+                    <img
+                    src={github}
+                    alt="github"
+                    className="relative z-50 w-10 -rotate-45 hover:scale-150 hover:z-50 transition-transform cursor-pointer"
+                    onClick={() => window.open("https://github.com/DaviCalebe", "_blank")}
+                    />
                 </div>
                 <div className="bg-base p-4 rotate-45">
-                    <img src={linkedin} alt="linkedin" className="relative z-50 w-10 -rotate-45 hover:scale-150 hover:z-50 transition-transform" />
+                    <img
+                    src={linkedin}
+                    alt="linkedin"
+                    className="relative z-50 w-10 -rotate-45 hover:scale-150 hover:z-50 transition-transform cursor-pointer"
+                    onClick={() => window.open("https://www.linkedin.com/in/davicalebe/", "_blank")}
+                    />
                 </div>
                 <div className="bg-base p-4 rotate-45">
-                    <img src={whatsapp} alt="whatsapp" className="relative z-50 w-10 -rotate-45 hover:scale-150 hover:z-50 transition-transform" />
+                    <img
+                    src={whatsapp}
+                    alt="whatsapp"
+                    className="relative z-50 w-10 -rotate-45 hover:scale-150 hover:z-50 transition-transform cursor-pointer"
+                    onClick={() => window.open("https://wa.me/5581987357749", "_blank")}
+                    />
                 </div>
             </motion.div>
         </aside>

@@ -1,3 +1,5 @@
+import arrow from "../assets/arrow.svg";
+
 const Projects = () => {
 
     const projectsData = [
@@ -13,13 +15,13 @@ const Projects = () => {
         <section className="bg-secondary text-white grid grid-cols-2 gap-10 min-h-[45rem] h-screen p-8">
             <div className="flex flex-col">
                 <div className="flex justify-between border-b-2 border-black">
-                    <h1 className="text-5xl uppercase">Projetos</h1>
-                    <h1 className="text-5xl">{totalProjects}</h1>
+                    <h1 className="appear text-5xl uppercase">Projetos</h1>
+                    <h1 className="appear text-5xl">{totalProjects}</h1>
                 </div>
                 <ul className="py-2 space-y-2">
                     {projectsData.map((project, index) => (
-                        <li key={index} className="text-2xl border-b-2 border-black">
-                            <button>
+                        <li key={index} className="appear-left text-2xl border-b-2 border-black p-2 w-full overflow-hidden whitespace-nowrap text-ellipsis">
+                            <button className="w-full overflow-hidden whitespace-nowrap text-ellipsis text-left">
                                 {project}
                             </button>
                         </li>

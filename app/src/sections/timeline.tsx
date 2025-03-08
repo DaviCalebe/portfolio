@@ -96,16 +96,16 @@ const Timeline = () => {
             <h1 className="text-5xl text-center text-tertiary uppercase py-8">SKILLS</h1>
 
             <div className="flex flex-wrap justify-center items-center px-10 gap-10">
-                <img src={html} alt="html" className="w-20 h-20"/>
-                <img src={css} alt="css" className="w-20 h-20"/>
-                <img src={bootstrap} alt="bootstrap" className="w-20 h-20"/>
-                <img src={react} alt="react" className="w-20 h-20"/>
-                <img src={javascript} alt="javascript" className="w-20 h-20"/>
-                <img src={typescript} alt="typescript" className="w-20 h-20"/>
-                <img src={tailwind} alt="tailwind" className="w-20 h-20"/>
-                <img src={node} alt="node-js" className="w-20 h-20"/>
-                <img src={python} alt="python" className="w-20 h-20"/>
-                <img src={java} alt="java" className="w-20 h-20"/>
+                <img src={html} alt="html" className="appear w-20 h-20"/>
+                <img src={css} alt="css" className="appear w-20 h-20"/>
+                <img src={bootstrap} alt="bootstrap" className="appear w-20 h-20"/>
+                <img src={react} alt="react" className="appear w-20 h-20"/>
+                <img src={javascript} alt="javascript" className="appear w-20 h-20"/>
+                <img src={typescript} alt="typescript" className="appear w-20 h-20"/>
+                <img src={tailwind} alt="tailwind" className="appear w-20 h-20"/>
+                <img src={node} alt="node-js" className="appear w-20 h-20"/>
+                <img src={python} alt="python" className="appear w-20 h-20"/>
+                <img src={java} alt="java" className="appear w-20 h-20"/>
             </div>
         </section>
     )

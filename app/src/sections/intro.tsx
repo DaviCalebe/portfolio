@@ -38,7 +38,7 @@ const Intro = () => {
                 drag
                 dragConstraints={constraintsRef}
                 dragElastic={0.2}
-                className="absolute top-0 right-0 bg-cover w-[90%] h-[90%] rounded-full"
+                className="absolute z-20 top-0 right-0 bg-cover w-[90%] h-[90%] rounded-full"
                 style={{ backgroundImage: `url(${profilePic})` }}
             />
         </motion.div>

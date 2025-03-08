@@ -29,7 +29,7 @@ const Contact = () => {
         <h1 className="bg-base text-secondary text-6xl inline-block mx-auto text-center p-4 -mt-8 rounded-lg">FALE COMIGO</h1>
         <div className="flex justify-center items-center">
             <div className="flex flex-1 justify-center items-center text-justify p-15">
-                <p className="text-2xl font-bold text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ad, sunt ipsum quisquam harum neque quos ducimus aut sint incidunt! Dolor dolorem iusto repudiandae id nihil, minus cupiditate libero commodi?</p>
+                <p className="appear-left text-2xl font-bold text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ad, sunt ipsum quisquam harum neque quos ducimus aut sint incidunt! Dolor dolorem iusto repudiandae id nihil, minus cupiditate libero commodi?</p>
             </div>
 
             <div className="bg-secondary w-px h-11/12"></div>
@@ -40,29 +40,29 @@ const Contact = () => {
                 className="max-w-xl mx-auto p-4 space-y-4 text-secondary text-xl rounded-lg"
                 >
                   <div className="flex flex-col gap-3">
-                      <label className="block text-4xl">Nome</label>
+                      <label className="appear block text-4xl">Nome</label>
                       <input
                       {...register("nome")}
-                      className="w-full p-2 bg-[#191919] text-white rounded"
+                      className="appear-right w-full p-2 bg-[#191919] text-white rounded"
                       />
                       {errors.nome && <p className="text-red-500">{errors.nome.message}</p>}
                   </div>
 
                   <div className="flex flex-col gap-3">
-                      <label className="block text-4xl">E-mail</label>
+                      <label className="appear block text-4xl">E-mail</label>
                       <input
                       {...register("email")}
                       type="email"
-                      className="w-full p-2 bg-[#191919] text-white rounded"
+                      className="appear-right w-full p-2 bg-[#191919] text-white rounded"
                       />
                       {errors.email && <p className="text-red-500">{errors.email.message}</p>}
                   </div>
 
                   <div className="flex flex-col gap-3">
-                      <label className="block text-4xl">Mensagem</label>
+                      <label className="appear block text-4xl">Mensagem</label>
                       <textarea
                       {...register("mensagem")}
-                      className="w-full h-48 p-2 bg-[#191919] text-white rounded"
+                      className="appear-right w-full h-48 p-2 bg-[#191919] text-white rounded"
                       />
                       {errors.mensagem && (
                       <p className="text-red-500">{errors.mensagem.message}</p>
