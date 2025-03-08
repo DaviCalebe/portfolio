@@ -21,14 +21,19 @@ const Projects = () => {
                 <ul className="py-2 space-y-2">
                     {projectsData.map((project, index) => (
                         <li key={index} className="appear-left text-2xl border-b-2 border-black p-2 w-full overflow-hidden whitespace-nowrap text-ellipsis">
-                            <button className="w-full overflow-hidden whitespace-nowrap text-ellipsis text-left">
-                                {project}
+                            <button className="flex items-center gap-3 w-full overflow-hidden whitespace-nowrap text-ellipsis text-left -ml-13 hover:-ml-0 transition-all duration-300 ease-in-out">
+                                <img src={arrow}
+                                alt="arrow"
+                                className="w-10" />
+                                <span>
+                                    {project}
+                                </span>
                             </button>
                         </li>
                     ))}
                 </ul>
             </div>
-            <div className="relative border border-black w-full h-11/12 rounded-se-3xl rounded-es-3xl">
+            <div className="appear relative border border-black w-full h-11/12 rounded-se-3xl rounded-es-3xl">
                     <div className="absolute bottom-0 left-0 w-full flex gap-2 p-3">
                         <button className="bg-black text-white text-2xl w-full h-12 rounded-lg">Código fonte</button>
                         <button className="bg-black text-white text-2xl w-full h-12 rounded-lg">Demo</button>
