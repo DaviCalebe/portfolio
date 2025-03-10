@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+/*   font-family: 'Inter', sans-serif;
+ */}
+
 *{
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 2px;
@@ -38,14 +42,13 @@
   }
 }
 
-/* Aparecer da esquerda */
+
 .appear-left {
   animation: appear-left 0.5s ease-out;
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
 
-/* Aparecer da direita */
 .appear-right {
   animation: appear-right 0.5s ease-out;
   animation-timeline: view();
@@ -57,6 +60,22 @@
   animation-timeline: view();
   animation-range: entry 0% cover 30%;
 }
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-10%);
+  }
+}
+
+.slide {
+  animation: slide 5s linear infinite alternate;
+  will-change: transform;
+}
+
+
 
 @theme {
   --base-color: #0f0f0f;
