@@ -71,7 +71,7 @@ const Contact = () => {
 
                   <button
                       type="submit"
-                      className="text-4xl w-full p-2 bg-[#191919] hover:bg-[rgba(25,25,25,0.7)] rounded"
+                      className="text-4xl w-full p-2 bg-[#191919] hover:bg-[rgba(25,25,25,0.3)] rounded cursor-pointer"
                   >
                       ENVIAR
                   </button>

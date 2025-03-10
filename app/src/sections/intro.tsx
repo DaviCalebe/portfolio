@@ -72,13 +72,13 @@ const Intro = () => {
         <div className="flex gap-5 mt-4">
           <button
             onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=18FH_bWyRGCCaerdntXZsPgoWZsE0reJZ"}
-            className="flex items-center gap-4 text-3xl bg-transparent text-secondary border border-primary px-6 py-2 rounded-lg cursor-pointer"
+            className="flex items-center gap-4 text-3xl bg-transparent hover:bg-primary text-secondary border border-primary px-6 py-2 rounded-lg cursor-pointer"
           >
             <img src={brazilflag} alt="brazil-flag" className="w-10 h-10" /> CV
           </button>
           <button
             onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1_2R6twVKEHGEQ2Yp_zBaXo0XMPyIakZL"}
-            className="flex items-center gap-4 text-3xl bg-transparent text-secondary border border-primary px-6 py-2 rounded-lg cursor-pointer"
+            className="flex items-center gap-4 text-3xl bg-transparent hover:bg-primary text-secondary border border-primary px-6 py-2 rounded-lg cursor-pointer"
           >
             <img src={usaflag} alt="usa-flag" className="w-10 h-10" /> CV
           </button>

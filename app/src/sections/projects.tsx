@@ -1,6 +1,7 @@
 import { useState } from "react";
 import arrow from "../assets/arrow.svg";
 import { projectsData, Project } from "../projectsData";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState<Project>(projectsData[0]);
@@ -31,50 +32,73 @@ const Projects = () => {
       </div>
 
       <div
-  className="appear relative border border-black w-full h-11/12 rounded-se-3xl rounded-es-3xl flex items-end overflow-hidden"
-  style={{
-    backgroundImage: `url(/assets/${selectedProject.image})`,
-    backgroundSize: "cover", 
-    backgroundPosition: "center",
-    backgroundRepeat: "no-repeat",
-    transition: "background-image 1s ease-in-out"
-  }}
->
+        className="appear relative border border-black w-full h-11/12 rounded-se-3xl rounded-es-3xl flex items-end overflow-hidden"
+        style={{
+          backgroundImage: `url(/assets/${selectedProject.image})`,
+          backgroundSize: "cover", 
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          transition: "background-image 1s ease-in-out"
+        }}
+      >
 
-        <div className="absolute bottom-0 left-0 w-full flex gap-2 p-3">
-          {selectedProject.codeLink && (
-            <a
-              href={selectedProject.codeLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
-            >
-              Código fonte
-            </a>
-          )}
+      <AnimatePresence mode="wait">
+        {(selectedProject.codeLink || selectedProject.demoLink || selectedProject.linkedinPost) && (
+          <motion.div
+            key={selectedProject.title}
+            className="absolute bottom-0 left-0 w-full flex gap-2 p-3"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.3 }}
+          >
+            {selectedProject.codeLink && (
+              <motion.a
+                href={selectedProject.codeLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black hover:bg-[rgba(0,0,0,0.7)] text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.3 }}
+              >
+                Código fonte
+              </motion.a>
+            )}
 
-          {selectedProject.demoLink && (
-            <a
-              href={selectedProject.demoLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-black text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
-            >
-              Demo
-            </a>
-          )}
+            {selectedProject.demoLink && (
+              <motion.a
+                href={selectedProject.demoLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black hover:bg-[rgba(0,0,0,0.7)] text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+              >
+                Demo
+              </motion.a>
+            )}
 
-    {selectedProject.linkedinPost && (
-            <a
-              href={selectedProject.linkedinPost}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
-            >
-              LinkedIn Post
-            </a>
-          )}
-        </div>
+            {selectedProject.linkedinPost && (
+              <motion.a
+                href={selectedProject.linkedinPost}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-800 text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: 20 }}
+                transition={{ duration: 0.3, delay: 0.2 }}
+              >
+                LinkedIn Post
+              </motion.a>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
       </div>
     </section>
   );
