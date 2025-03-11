@@ -15,11 +15,12 @@ const About = () => {
           </svg>
           
           <div className="relative flex flex-col self-start mt-15 gap-19 text-center">
-              <h1 className="text-5xl font-semibold max-w-[800px] z-10">SOBRE MIM</h1>
+              <h1 className="appear text-5xl font-semibold max-w-[800px] z-10">SOBRE MIM</h1>
               
-              <p className="text-3xl font-medium max-w-[800px] z-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
+              <p className="text-3xl font-medium max-w-[800px] z-10">Sou um desenvolvedor de software apaixonado por tecnologia, residente em Recife-PE e recém-formado pelo Embarque Digital, onde me descobri na área. Faço inglês na ABA e estou sempre buscando evoluir, enfrentar desafios e mergulhar em novos projetos.</p>
               
-              <p className="text-3xl font-medium max-w-[800px] z-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit aperiam eaque ea nobis tempora impedit perspiciatis nesciunt consectetur magnam numquam, necessitatibus aliquam illo libero ratione eligendi nemo voluptatibus et facere.</p>
+              <p className="text-3xl font-medium max-w-[800px] z-10">Tenho experiência em JavaScript, TypeScript, TailwindCSS, React, Node.js, Java, Python e ServiceNow. Tenho trabalhado em projetos focados na criação de interfaces intuitivas e bem estruturadas, garantindo uma experiência fluida, responsiva e agradável para o usuário.
+              </p>
           </div>
           
           <svg className="absolute bottom-0 -mb-px z-10 text-base" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

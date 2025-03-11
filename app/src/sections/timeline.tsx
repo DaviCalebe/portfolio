@@ -20,15 +20,15 @@ const Timeline = () => {
 
                 <div className="appear-left col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
-                        <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
-                        <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
+                        <h1 className="text-tertiary text-2xl font-semibold">Início</h1>
+                        <p className="text-tertiary">Entrei na faculdade de ADS e tudo era novo, mas logo me encantei pela tecnologia. No Rec'N'Play, tive meu primeiro contato real com a área e percebi que era exatamente o caminho que queria seguir!</p>
                     </div>
                 </div>
                 
                 <div className="relative col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-1 bg-tertiary"></div>
-                    <div className="absolute w-16 h-16 rounded-full bg-tertiary flex justify-center items-center text-tertiary text-2xl font-bold z-10">
-                        <div className="absolute bg-base w-14 h-14 rounded-full z-0"></div>
+                    <div className="absolute w-19 h-19 rounded-full bg-tertiary flex justify-center items-center text-tertiary text-2xl font-bold z-10">
+                        <div className="absolute bg-base w-17 h-17 rounded-full z-0"></div>
                         <span className="z-10">2022</span>
                     </div>
                 </div>
@@ -41,16 +41,16 @@ const Timeline = () => {
                 
                 <div className="relative col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-1 bg-tertiary"></div>
-                    <div className="absolute w-16 h-16 rounded-full bg-tertiary flex justify-center items-center text-tertiary text-2xl font-bold z-10">
-                        <div className="absolute bg-base w-14 h-14 rounded-full z-0"></div>
+                    <div className="absolute w-19 h-19 rounded-full bg-tertiary flex justify-center items-center text-tertiary text-2xl font-bold z-10">
+                        <div className="absolute bg-base w-17 h-17 rounded-full z-0"></div>
                         <span className="z-10">2023</span>
                     </div>
                 </div>
 
                 <div className="appear-right col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
-                        <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
-                        <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
+                        <h1 className="text-tertiary text-2xl font-semibold">Aprendizados</h1>
+                        <p className="text-tertiary">Aprofundei meus estudos em programação, explorando back-end, front-end e low-code. Foi um ano de imersão, onde absorvi ao máximo todo conhecimento disponível!</p>
                     </div>
                 </div>
 
@@ -58,15 +58,15 @@ const Timeline = () => {
                 
                 <div className="appear-left col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
-                        <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
-                        <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
+                        <h1 className="text-tertiary text-2xl font-semibold">Resultados</h1>
+                        <p className="text-tertiary">Comecei um curso de inglês na ABA e embarquei em projetos maiores! Fomos selecionados para o Demoday pelo Squad21 da Residência do Porto Digital, apresentando no Lab de Inovação e na Arena Embarque Digital, no Rec'N'Play.</p>
                     </div>
                 </div>
                 
                 <div className="relative col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-1 bg-tertiary"></div>
-                    <div className="absolute w-16 h-16 rounded-full bg-tertiary flex justify-center items-center text-tertiary text-2xl font-bold z-10">
-                        <div className="absolute bg-base w-14 h-14 rounded-full z-0"></div>
+                    <div className="absolute w-19 h-19 rounded-full bg-tertiary flex justify-center items-center text-tertiary text-2xl font-bold z-10">
+                        <div className="absolute bg-base w-17 h-17 rounded-full z-0"></div>
                         <span className="z-10">2024</span>
                     </div>
                 </div>
@@ -79,16 +79,17 @@ const Timeline = () => {
                 
                 <div className="relative col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-1 bg-tertiary"></div>
-                    <div className="absolute w-16 h-16 rounded-full bg-tertiary flex justify-center items-center text-tertiary text-2xl font-bold z-10">
-                        <div className="absolute bg-base w-14 h-14 rounded-full z-0"></div>
+                    <div className="absolute w-19 h-19 rounded-full bg-tertiary flex justify-center items-center text-tertiary text-2xl font-bold z-10">
+                        <div className="absolute bg-base w-17 h-17 rounded-full z-0"></div>
                         <span className="z-10">2025</span>
                     </div>
                 </div>
 
                 <div className="appear-right col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
-                        <h1 className="text-tertiary text-2xl font-semibold">teste</h1>
-                        <p className="text-tertiary">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio eos delectus labore tempora ea vel! Laborum maiores, quaerat delectus eius a earum ea aperiam repellat, ipsa cupiditate voluptatem beatae quae?</p>
+                        <h1 className="text-tertiary text-2xl font-semibold">Mistério</h1>
+                        <p className="text-tertiary">O que 2025 reserva ainda é incerto, mas sei que boas coisas virão! Estou focado em evoluir, estudando e trabalhando para me tornar cada vez melhor naquilo que amo.
+                        </p>
                     </div>
                 </div>
             </div>

@@ -24,7 +24,7 @@ const Projects = () => {
                 onClick={() => setSelectedProject(project)}
               >
                 <img src={arrow} alt="arrow" className="w-10" />
-                <span>{project.title}</span>
+                <span className="block truncate">{project.title}</span>
               </button>
             </li>
           ))}
