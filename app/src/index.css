@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-body {
-/*   font-family: 'Inter', sans-serif;
- */}
-
 *{
   font-family: 'JetBrains Mono', monospace;
   letter-spacing: 2px;
@@ -74,8 +70,6 @@ body {
   animation: slide 5s linear infinite alternate;
   will-change: transform;
 }
-
-
 
 @theme {
   --base-color: #0f0f0f;

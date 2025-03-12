@@ -8,9 +8,22 @@ import tailwind from "../assets/tailwind.svg";
 import node from "../assets/node-js.svg";
 import python from "../assets/python.svg";
 import java from "../assets/java.svg";
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
 const Timeline = () => {
+    const icons = [
+        { src: html, alt: "html" },
+        { src: css, alt: "css" },
+        { src: bootstrap, alt: "bootstrap" },
+        { src: react, alt: "react" },
+        { src: javascript, alt: "javascript" },
+        { src: typescript, alt: "typescript" },
+        { src: tailwind, alt: "tailwind" },
+        { src: node, alt: "node-js" },
+        { src: python, alt: "python" },
+        { src: java, alt: "java" },
+      ];
+
     return (
         <section className="px-8 py-10">
             <h1 className="text-5xl text-center text-tertiary uppercase py-8">A estrada até aqui...</h1>
@@ -97,108 +110,21 @@ const Timeline = () => {
 
             <h1 className="text-5xl text-center text-tertiary uppercase py-8">SKILLS</h1>
 
-            <div className="flex flex-wrap justify-center items-center px-10 gap-10">
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={html}
-                alt="html"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={css}
-                alt="css"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={bootstrap}
-                alt="bootstrap"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={react}
-                alt="react"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={javascript}
-                alt="javascript"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={typescript}
-                alt="typescript"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={tailwind}
-                alt="tailwind"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={node}
-                alt="node-js"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={python}
-                alt="python"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-                <motion.img
-                whileHover={{
-                    scale: 1.3,
-                    transition: { duration: 3 },
-                }}
-                whileTap={{ scale: 0.9 }}
-                src={java}
-                alt="java"
-                className="appear w-20 h-20 cursor-pointer"
-                />
-            </div>
+            <div className="container mx-auto overflow-hidden">
+  <motion.div
+    initial={{ x: 0 }}
+    animate={{ x: "-50%"}}
+    transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
+    className="flex gap-10"
+  >
+    {[...icons, ...icons].map((icon, index) => (
+      <img key={index} {...icon} className="w-20 h-20" />
+    ))}
+  </motion.div>
+
+</div>
+
+
         </section>
     )
 }

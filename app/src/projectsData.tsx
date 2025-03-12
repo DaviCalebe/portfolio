@@ -20,7 +20,7 @@ export type Project = {
       title: "Site oficial da Fast Trading",
       image: "../src/assets/fast-trading.png",
       stacks: [html, css, javascript],
-      description: "Meu primeiro freelance! Juntamente com meu colega, Pedro, fomos solicitados a criar uma landing page para a empresa Fast Trading Import. Nos dedicamos à responsividade do site, garantindo uma ótima experiência em diferentes dispositivos, e fizemos a tradução do conteúdo inteiro do site para ampliar o alcance da empresa.",
+      description: "Meu primeiro trabalho como freelancer! Junto com meu colega Pedro, desenvolvemos uma landing page para a empresa Fast Trading Import. Focamos na responsividade para proporcionar uma experiência fluida em qualquer dispositivo e traduzimos todo o conteúdo do site, ampliando seu alcance para um público maior.",
       codeLink: "https://github.com/DaviCalebe/fast-trading",
       demoLink: "https://www.fasttradingimport.com.br/",
       linkedinPost: "https://www.linkedin.com/feed/update/urn:li:activity:7287171460274511873/"

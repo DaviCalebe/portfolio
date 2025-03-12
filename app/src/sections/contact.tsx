@@ -29,7 +29,7 @@ const Contact = () => {
         <h1 className="bg-base text-secondary text-6xl inline-block mx-auto text-center p-4 -mt-8 rounded-lg">FALE COMIGO</h1>
         <div className="flex justify-center items-center">
             <div className="flex flex-1 justify-center items-center text-justify p-15">
-                <p className="appear-left text-2xl font-bold text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus ad, sunt ipsum quisquam harum neque quos ducimus aut sint incidunt! Dolor dolorem iusto repudiandae id nihil, minus cupiditate libero commodi?</p>
+                <p className="appear-left text-2xl font-bold text-secondary">Freelance, parceria, fechar contrato ou apenas uma troca de ideias? Fique à vontade para me chamar ou mandar uma mensagem! E se quiser acompanhar mais do meu trabalho, minhas redes sociais estão à disposição!</p>
             </div>
 
             <div className="bg-secondary w-px h-11/12"></div>
