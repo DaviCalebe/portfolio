@@ -8,6 +8,7 @@ import tailwind from "../assets/tailwind.svg";
 import node from "../assets/node-js.svg";
 import python from "../assets/python.svg";
 import java from "../assets/java.svg";
+import { motion } from "framer-motion";
 
 const Timeline = () => {
     return (
@@ -59,7 +60,7 @@ const Timeline = () => {
                 <div className="appear-left col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">Resultados</h1>
-                        <p className="text-tertiary">Comecei um curso de inglês na ABA e embarquei em projetos maiores! Fomos selecionados para o Demoday pelo Squad21 da Residência do Porto Digital, apresentando no Lab de Inovação e na Arena Embarque Digital, no Rec'N'Play.</p>
+                        <p className="text-tertiary">Comecei um curso de inglês na ABA e embarquei em projetos maiores! Fomos selecionados para o Demoday pelo Squad34 da Residência do Porto Digital, apresentando no Lab de Inovação e na Arena Embarque Digital, no Rec'N'Play.</p>
                     </div>
                 </div>
                 
@@ -97,16 +98,106 @@ const Timeline = () => {
             <h1 className="text-5xl text-center text-tertiary uppercase py-8">SKILLS</h1>
 
             <div className="flex flex-wrap justify-center items-center px-10 gap-10">
-                <img src={html} alt="html" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={css} alt="css" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={bootstrap} alt="bootstrap" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={react} alt="react" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={javascript} alt="javascript" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={typescript} alt="typescript" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={tailwind} alt="tailwind" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={node} alt="node-js" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={python} alt="python" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
-                <img src={java} alt="java" className="appear w-20 h-20 hover:scale-130 transition-transform duration-300"/>
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={html}
+                alt="html"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={css}
+                alt="css"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={bootstrap}
+                alt="bootstrap"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={react}
+                alt="react"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={javascript}
+                alt="javascript"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={typescript}
+                alt="typescript"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={tailwind}
+                alt="tailwind"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={node}
+                alt="node-js"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={python}
+                alt="python"
+                className="appear w-20 h-20 cursor-pointer"
+                />
+                <motion.img
+                whileHover={{
+                    scale: 1.3,
+                    transition: { duration: 3 },
+                }}
+                whileTap={{ scale: 0.9 }}
+                src={java}
+                alt="java"
+                className="appear w-20 h-20 cursor-pointer"
+                />
             </div>
         </section>
     )

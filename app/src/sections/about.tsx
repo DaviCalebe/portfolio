@@ -19,7 +19,7 @@ const About = () => {
               
               <p className="text-3xl font-medium max-w-[800px] z-10">Sou um desenvolvedor de software apaixonado por tecnologia, residente em Recife-PE e recém-formado pelo Embarque Digital, onde me descobri na área. Faço inglês na ABA e estou sempre buscando evoluir, enfrentar desafios e mergulhar em novos projetos.</p>
               
-              <p className="text-3xl font-medium max-w-[800px] z-10">Tenho experiência em JavaScript, TypeScript, TailwindCSS, React, Node.js, Java, Python e ServiceNow. Tenho trabalhado em projetos focados na criação de interfaces intuitivas e bem estruturadas, garantindo uma experiência fluida, responsiva e agradável para o usuário.
+              <p className="text-3xl font-medium max-w-[800px] z-10">Possuo experiência em JavaScript, TypeScript, TailwindCSS, React, Node.js, Java, Python e ServiceNow. Tenho trabalhado em projetos focados na criação de interfaces intuitivas e bem estruturadas, garantindo uma experiência fluida, responsiva e agradável para o usuário.
               </p>
           </div>
           

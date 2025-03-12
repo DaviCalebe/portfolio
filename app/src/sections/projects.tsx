@@ -8,27 +8,58 @@ const Projects = () => {
 
   return (
     <section className="bg-secondary text-white grid grid-cols-2 gap-10 min-h-[45rem] h-screen p-8">
-      <div className="flex flex-col">
-        <div className="flex justify-between border-b-2 border-black">
-          <h1 className="appear text-5xl uppercase">Projetos</h1>
-          <h1 className="appear text-5xl">{projectsData.length}</h1>
-        </div>
-        <ul className="py-2 space-y-2">
-          {projectsData.map((project, index) => (
-            <li
-              key={index}
-              className="appear-left text-2xl border-b-2 border-black p-2 w-full overflow-hidden whitespace-nowrap text-ellipsis"
-            >
-              <button
-                className="flex items-center gap-3 w-full overflow-hidden whitespace-nowrap text-ellipsis text-left -ml-13 hover:-ml-0 transition-all duration-300 ease-in-out"
-                onClick={() => setSelectedProject(project)}
+      <div className="grid grid-rows-2">
+        <div className="flex flex-col">
+          <div className="flex justify-between border-b-2 border-black">
+            <h1 className="appear text-5xl uppercase">Projetos</h1>
+            <h1 className="appear text-5xl">{projectsData.length}</h1>
+          </div>
+          <ul className="py-2 space-y-2">
+            {projectsData.map((project, index) => (
+              <motion.li
+                key={index}
+                className="appear-left text-2xl border-b-2 border-black p-2 w-full overflow-hidden whitespace-nowrap text-emotion.llipsis"
               >
-                <img src={arrow} alt="arrow" className="w-10" />
-                <span className="block truncate">{project.title}</span>
-              </button>
-            </li>
-          ))}
-        </ul>
+                <motion.button
+                  initial={{marginLeft: "-3.25rem"}}
+                  whileHover={{ marginLeft: "0rem" }}
+                  whileTap={{scale: 0.9}}
+                  transition={{ duration: 0.3, ease: "easeInOut"}}
+                  className="flex items-center gap-3 w-full overflow-hidden whitespace-nowrap text-ellipsis text-left cursor-pointer"
+                  onClick={() => setSelectedProject(project)}
+                >
+                  <img src={arrow} alt="arrow" className="w-10" />
+                  <span className="block truncate">{project.title}</span>
+                </motion.button>
+              </motion.li>
+            ))}
+          </ul>
+        </div>
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={selectedProject.title} // Garante que um novo elemento seja renderizado a cada troca de projeto
+            className="appear flex flex-col gap-4"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 20 }}
+            transition={{ duration: 0.3 }}
+          >
+            <p className="text-2xl">{selectedProject.description}</p>
+            <div className="flex gap-5">
+              {selectedProject.stacks.map((stack, i) => (
+                <motion.img
+                  key={i}
+                  src={stack}
+                  className="w-10 h-10"
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 10 }}
+                  transition={{ duration: 0.3, delay: i * 0.05 }} // Pequeno atraso para cada item entrar suavemente
+                />
+              ))}
+            </div>
+          </motion.div>
+        </AnimatePresence>
       </div>
 
       <div
