@@ -89,7 +89,7 @@ const Timeline = () => {
                 <div className="appear-right col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">Mistério</h1>
-                        <p className="text-tertiary">O que 2025 reserva ainda é incerto, mas sei que boas coisas virão! Estou focado em evoluir, estudando e trabalhando para me tornar cada vez melhor naquilo que amo.
+                        <p className="text-tertiary">O que esse ano me reserva ainda é incerto, mas sei que boas coisas virão! Estou focado em evoluir, estudando e trabalhando para me tornar cada vez melhor naquilo que amo.
                         </p>
                     </div>
                 </div>
