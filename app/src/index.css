@@ -83,7 +83,7 @@
 .slider {
   display: flex;
   gap: 40px;
-  animation: scroll 5s linear infinite;
+  animation: scroll 20s linear infinite;
 }
 
 
