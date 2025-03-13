@@ -71,6 +71,22 @@
   will-change: transform;
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+
+.slider {
+  display: flex;
+  gap: 40px;
+  animation: scroll 5s linear infinite;
+}
+
+
 @theme {
   --base-color: #0f0f0f;
   --primary-color: #541185;

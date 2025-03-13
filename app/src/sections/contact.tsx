@@ -29,7 +29,7 @@ const Contact = () => {
         <h1 className="bg-base text-secondary text-6xl inline-block mx-auto text-center p-4 -mt-8 rounded-lg">FALE COMIGO</h1>
         <div className="flex justify-center items-center">
             <div className="flex flex-1 justify-center items-center text-justify p-15">
-                <p className="appear-left text-2xl font-bold text-secondary">Freelance, parceria, fechar contrato ou apenas uma troca de ideias? Fique à vontade para me chamar ou mandar uma mensagem! E se quiser acompanhar mais do meu trabalho, minhas redes sociais estão à disposição!</p>
+                <p className="appear-left text-2xl font-bold text-secondary relative before:content-[''] before:absolute before:w-20 before:h-[5px] before:bg-secondary before:-top-2 before:left-0 hover:before:w-full before:transition-all before:duration-500 before:ease-out hover:before:w-full">Freelance, parceria, fechar contrato, feedbacks ou apenas uma troca de ideias? Fique à vontade para me chamar ou mandar uma mensagem, sem compromisso! <br /> Ah, e se quiser acompanhar mais do meu trabalho, minhas redes sociais estão à disposição!</p>
             </div>
 
             <div className="bg-secondary w-px h-11/12"></div>

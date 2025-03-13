@@ -110,21 +110,13 @@ const Timeline = () => {
 
             <h1 className="text-5xl text-center text-tertiary uppercase py-8">SKILLS</h1>
 
-            <div className="container mx-auto overflow-hidden">
-  <motion.div
-    initial={{ x: 0 }}
-    animate={{ x: "-50%"}}
-    transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-    className="flex gap-10"
-  >
-    {[...icons, ...icons].map((icon, index) => (
-      <img key={index} {...icon} className="w-20 h-20" />
-    ))}
-  </motion.div>
-
-</div>
-
-
+            <div className="flex justify-self-center overflow-hidden w-full max-w-[70%]">
+                <div className="slider flex gap-10 animate-scroll">
+                    {[...icons, ...icons].map((icon, index) => (
+                    <img key={index} {...icon} className="w-20 h-20" />
+                    ))}
+                </div>
+            </div>
         </section>
     )
 }
