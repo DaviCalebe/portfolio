@@ -37,7 +37,7 @@ const Projects = () => {
         </div>
         <AnimatePresence mode="wait">
           <motion.div
-            key={selectedProject.title} // Garante que um novo elemento seja renderizado a cada troca de projeto
+            key={selectedProject.title}
             className="appear flex flex-col gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ const Projects = () => {
             transition={{ duration: 0.3 }}
           >
             <p className="text-2xl">{selectedProject.description}</p>
-            <div className="flex gap-5">
+            <div className="flex justify-center gap-5 bg-[rgba(81,17,133,0.4)] px-5 py-1 w-auto rounded" style={{ width: "fit-content"}}>
               {selectedProject.stacks.map((stack, i) => (
                 <motion.img
                   key={i}
@@ -54,7 +54,7 @@ const Projects = () => {
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: 10 }}
-                  transition={{ duration: 0.3, delay: i * 0.05 }} // Pequeno atraso para cada item entrar suavemente
+                  transition={{ duration: 0.3, delay: i * 0.05 }}
                 />
               ))}
             </div>

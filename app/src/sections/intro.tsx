@@ -66,7 +66,7 @@ const Intro = () => {
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
-          {combinedEffect("dev full-stack")}
+          {combinedEffect("dev front-end")}
         </p>
 
         <div className="flex gap-5 mt-4">

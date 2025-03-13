@@ -107,3 +107,11 @@
   --base-color: #0f0f0f;
   --color-base: #0f0f0f;
  }
+
+ input:-webkit-autofill,
+ textarea:-webkit-autofill {
+   -webkit-text-fill-color: white !important;
+   background-color: #1a1a1a !important;
+   box-shadow: 0 0 0px 1000px #1a1a1a inset !important;   border: 1px solid #000 !important;
+ }
+  
