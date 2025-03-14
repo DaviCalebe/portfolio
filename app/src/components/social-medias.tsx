@@ -14,10 +14,10 @@ export const SocialMedias = () => {
         <aside className="sticky top-0 z-30">
             <motion.div
                 className="absolute top-30 right-0 flex flex-col gap-2 p-5"
-                initial={{ right: "-1.5rem" }} // Começa um pouco fora da tela
-                whileHover={{ right: "0.5rem" }} // Move para dentro ao passar o mouse
+                initial={{ right: "-1.5rem" }}
+                whileHover={{ right: "0.5rem" }}
                 transition={{ type: "spring", stiffness: 100 }}
-                style={{ clipPath: "inset(0 0 0 -2rem)" }} // Evita rolagem horizontal
+                style={{ clipPath: "inset(0 0 0 -2rem)" }}
             >
                 <div className="bg-base p-4 rotate-45">
                     <img

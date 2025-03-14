@@ -8,9 +8,8 @@ import tailwind from "../assets/tailwind.svg";
 import node from "../assets/node-js.svg";
 import python from "../assets/python.svg";
 import java from "../assets/java.svg";
-import { motion } from 'framer-motion';
 
-const Timeline = () => {
+const Timeline = ({ t }: { t: (key:string) => string}) => {
     const icons = [
         { src: html, alt: "html" },
         { src: css, alt: "css" },
@@ -26,16 +25,16 @@ const Timeline = () => {
 
     return (
         <section className="px-8 py-10">
-            <h1 className="text-5xl text-center text-tertiary uppercase py-8">A estrada até aqui...</h1>
+            <h1 className="text-5xl text-center text-tertiary uppercase py-8">{t("timeline.title")}</h1>
 
             <div className="mx-auto grid grid-cols-9">
 
-                {/* STEP 1 */}
+                {/* ====================== STEP 1 ====================== */}
 
                 <div className="appear-left col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
-                        <h1 className="text-tertiary text-2xl font-semibold">Início</h1>
-                        <p className="text-tertiary">Entrei na faculdade de ADS e tudo era novo, mas logo me encantei pela tecnologia. No Rec'N'Play, tive meu primeiro contato real com a área e percebi que era exatamente o caminho que queria seguir!</p>
+                        <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step1.title")}</h1>
+                        <p className="text-tertiary">{t("timeline.step1.description")}</p>
                     </div>
                 </div>
                 
@@ -49,7 +48,7 @@ const Timeline = () => {
 
                 <div className="col-span-4 w-full h-full"></div>
 
-                {/* STEP 2 */}
+                {/* ====================== STEP 2 ====================== */}
 
                 <div className="col-span-4 w-full h-full"></div>
                 
@@ -63,17 +62,17 @@ const Timeline = () => {
 
                 <div className="appear-right col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
-                        <h1 className="text-tertiary text-2xl font-semibold">Aprendizados</h1>
-                        <p className="text-tertiary">Aprofundei meus estudos em programação, explorando back-end, front-end e low-code. Foi um ano de imersão, onde absorvi ao máximo todo conhecimento disponível!</p>
+                        <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step2.title")}</h1>
+                        <p className="text-tertiary">{t("timeline.step2.description")}</p>
                     </div>
                 </div>
 
-                {/* STEP 3 */}
+                {/* ====================== STEP 3 ====================== */}
                 
                 <div className="appear-left col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
-                        <h1 className="text-tertiary text-2xl font-semibold">Resultados</h1>
-                        <p className="text-tertiary">Comecei um curso de inglês na ABA e embarquei em projetos maiores! Fomos selecionados para o Demoday pelo Squad34 da Residência do Porto Digital, apresentando no Lab de Inovação e na Arena Embarque Digital, no Rec'N'Play.</p>
+                        <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step3.title")}</h1>
+                        <p className="text-tertiary">{t("timeline.step3.description")}</p>
                     </div>
                 </div>
                 
@@ -87,7 +86,7 @@ const Timeline = () => {
 
                 <div className="col-span-4 w-full h-full"></div>
 
-                {/* STEP 4 */}
+                {/* ====================== STEP 4 ====================== */}
 
                 <div className="col-span-4 w-full h-full"></div>
                 
@@ -101,9 +100,8 @@ const Timeline = () => {
 
                 <div className="appear-right col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
-                        <h1 className="text-tertiary text-2xl font-semibold">Mistério</h1>
-                        <p className="text-tertiary">O que esse ano me reserva ainda é incerto, mas sei que boas coisas virão! Estou focado em evoluir, estudando e trabalhando para me tornar cada vez melhor naquilo que amo.
-                        </p>
+                        <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step4.title")}</h1>
+                        <p className="text-tertiary">{t("timeline.step4.description")}</p>
                     </div>
                 </div>
             </div>

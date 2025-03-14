@@ -1,4 +1,4 @@
-const About = () => {
+const About = ({ t }: { t: (key:string) => string}) => {
   return (
       <section className="relative flex justify-center min-h-[55rem] h-auto overflow-hidden bg-[#C6B7CE]">
           <svg className="absolute top-0 -mt-px z-10 rotate-180 text-base" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -15,12 +15,11 @@ const About = () => {
           </svg>
           
           <div className="relative flex flex-col self-start mt-15 gap-19 text-center">
-              <h1 className="appear text-5xl font-semibold max-w-[800px] z-10">SOBRE MIM</h1>
+              <h1 className="appear text-5xl font-semibold uppercase max-w-[800px] z-10">{t("about.title")}</h1>
               
-              <p className="text-3xl font-medium max-w-[800px] z-10">Sou um desenvolvedor de software apaixonado por tecnologia, residente em Recife-PE e recém-formado pelo Embarque Digital, onde me descobri na área. Faço inglês na ABA e estou sempre buscando evoluir, enfrentar desafios e mergulhar em novos projetos.</p>
+              <p className="text-3xl font-medium max-w-[800px] z-10">{t("about.p1")}</p>
               
-              <p className="text-3xl font-medium max-w-[800px] z-10">Possuo experiência em JavaScript, TypeScript, TailwindCSS, React, Node.js, Java, Python e ServiceNow. Tenho trabalhado em projetos focados na criação de interfaces intuitivas e bem estruturadas, garantindo uma experiência fluida, responsiva e agradável para o usuário.
-              </p>
+              <p className="text-3xl font-medium max-w-[800px] z-10">{t("about.p2")}</p>
           </div>
           
           <svg className="absolute bottom-0 -mb-px z-10 text-base" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

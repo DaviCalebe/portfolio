@@ -3,11 +3,12 @@ import darkmode from '../assets/dark-mode.svg';
 import brazilflag from '../assets/brazil-flag.svg';
 import usaflag from '../assets/usa-flag.svg';
 import React, { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { motion } from "framer-motion";
 
 export const ToggleNav = () => {
   const [isLightMode, setIsLightMode] = useState(false);
-  const [isEnglish, setIsEnglish] = useState(false);
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     const savedTheme = localStorage.getItem('theme');
@@ -20,39 +21,26 @@ export const ToggleNav = () => {
       localStorage.setItem('theme', 'dark');
     }
 
-    const savedLanguage = localStorage.getItem('language');
-    if (savedLanguage === 'english') {
-      setIsEnglish(true);
-    } else {
-      setIsEnglish(false);
-      localStorage.setItem('language', 'portuguese');
-    }
+    const savedLanguage = localStorage.getItem('language') || 'pt';
+    i18n.changeLanguage(savedLanguage);
   }, []);
-
-  const setDarkMode = () => {
-    document.querySelector('body')?.setAttribute('data-theme', 'dark');
-    localStorage.setItem('theme', 'dark');
-    setIsLightMode(false);
-  };
-
-  const setLightMode = () => {
-    document.querySelector('body')?.setAttribute('data-theme', 'light');
-    localStorage.setItem('theme', 'light');
-    setIsLightMode(true);
-  };
 
   const toggleTheme = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.checked) {
-      setLightMode();
+      document.querySelector('body')?.setAttribute('data-theme', 'light');
+      localStorage.setItem('theme', 'light');
+      setIsLightMode(true);
     } else {
-      setDarkMode();
+      document.querySelector('body')?.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+      setIsLightMode(false);
     }
   };
 
   const toggleLanguage = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const newLanguage = e.target.checked;
-    setIsEnglish(newLanguage);
-    localStorage.setItem('language', newLanguage ? 'english' : 'portuguese');
+    const newLanguage = e.target.checked ? 'en' : 'pt';
+    i18n.changeLanguage(newLanguage);
+    localStorage.setItem('language', newLanguage);
   };
 
   return (
@@ -85,23 +73,23 @@ export const ToggleNav = () => {
       <label className="relative flex items-center cursor-pointer">
         <input 
           type="checkbox"
-          checked={isEnglish}
+          checked={i18n.language === "en"}
           onChange={toggleLanguage}
           className="absolute opacity-0"
         />
         <motion.img
-          src={usaflag}
-          alt="usa"
+          src={brazilflag}
+          alt="brazil"
           initial={{ scale: 0, rotate: 0 }}
-          animate={{ scale: isEnglish ? 0 : 1, rotate: isEnglish ? 0 : 360 }}
+          animate={{ scale: i18n.language === "en" ? 1 : 0, rotate: i18n.language === "en" ? 360 : 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           className="absolute h-full"
         />
         <motion.img
-          src={brazilflag}
-          alt="brazil"
+          src={usaflag}
+          alt="usa"
           initial={{ scale: 1, rotate: 0 }}
-          animate={{ scale: isEnglish ? 1 : 0, rotate: isEnglish ? 0 : 360 }}
+          animate={{ scale: i18n.language === "en" ? 0 : 1, rotate: i18n.language === "en" ? 0 : 360 }}
           transition={{ duration: 1, ease: "easeInOut" }}
           className='h-full'
         />

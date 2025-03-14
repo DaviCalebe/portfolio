@@ -3,7 +3,7 @@ import arrow from "../assets/arrow.svg";
 import { projectsData, Project } from "../projectsData";
 import { AnimatePresence, motion } from "framer-motion";
 
-const Projects = () => {
+const Projects = ({ t }: { t: (key:string) => string}) => {
   const [selectedProject, setSelectedProject] = useState<Project>(projectsData[0]);
 
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
       <div className="grid grid-rows-2">
         <div className="flex flex-col">
           <div className="flex justify-between border-b-2 border-black">
-            <h1 className="appear text-5xl uppercase">Projetos</h1>
+            <h1 className="appear text-5xl uppercase">{t("projects.title")}</h1>
             <h1 className="appear text-5xl">{projectsData.length}</h1>
           </div>
           <ul className="py-2 space-y-2">
@@ -29,7 +29,7 @@ const Projects = () => {
                   onClick={() => setSelectedProject(project)}
                 >
                   <img src={arrow} alt="arrow" className="w-10" />
-                  <span className="block truncate">{project.title}</span>
+                  <span className="block truncate">{t(`projects.${project.id}.title`)}</span>
                 </motion.button>
               </motion.li>
             ))}
@@ -37,14 +37,14 @@ const Projects = () => {
         </div>
         <AnimatePresence mode="wait">
           <motion.div
-            key={selectedProject.title}
+            key={t(`projects.${selectedProject.id}.title`)}
             className="appear flex flex-col gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.3 }}
           >
-            <p className="text-2xl">{selectedProject.description}</p>
+            <p className="text-2xl">{t(`projects.${selectedProject.id}.description`)}</p>
             <div className="flex justify-center gap-5 bg-[rgba(81,17,133,0.4)] px-5 py-1 w-auto rounded" style={{ width: "fit-content"}}>
               {selectedProject.stacks.map((stack, i) => (
                 <motion.img
@@ -76,7 +76,7 @@ const Projects = () => {
       <AnimatePresence mode="wait">
         {(selectedProject.codeLink || selectedProject.demoLink || selectedProject.linkedinPost) && (
           <motion.div
-            key={selectedProject.title}
+            key={t(`projects.${selectedProject.id}.title`)}
             className="absolute bottom-0 left-0 w-full flex gap-2 p-3"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -94,7 +94,7 @@ const Projects = () => {
                 exit={{ opacity: 0, y: 20 }}
                 transition={{ duration: 0.3 }}
               >
-                Código fonte
+                Github
               </motion.a>
             )}
 

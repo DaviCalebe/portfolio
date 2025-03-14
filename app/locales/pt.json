@@ -1,0 +1,38 @@
+{
+    "about": {
+        "title": "SOBRE MIM",
+        "p1": "Sou um desenvolvedor de software apaixonado por tecnologia, residente em Recife-PE e recém-formado pelo Embarque Digital, onde me descobri na área. Faço inglês na ABA e estou sempre buscando evoluir, enfrentar desafios e mergulhar em novos projetos.",
+        "p2": "Possuo experiência em JavaScript, TypeScript, TailwindCSS, React, Node.js, Java, Python e ServiceNow. Tenho trabalhado em projetos focados na criação de interfaces intuitivas e bem estruturadas, garantindo uma experiência fluida, responsiva e agradável para o usuário."
+        },
+    "timeline": {
+        "title": "A estrada até aqui...",
+        "step1": {"title": "Início", "description": "Entrei na faculdade de ADS e tudo era novo, mas logo me encantei pela tecnologia. No Rec'N'Play, tive meu primeiro contato real com a área e percebi que era exatamente o caminho que queria seguir!"},
+        "step2": {"title": "Aprendizados", "description": "Aprofundei meus estudos em programação, explorando back-end, front-end e low-code. Foi um ano de imersão, onde absorvi ao máximo todo conhecimento disponível!"},
+        "step3": {"title": "Resultados", "description": "Comecei um curso de inglês na ABA e embarquei em projetos maiores! Fomos selecionados para o Demoday pelo Squad34 da Residência do Porto Digital, apresentando no Lab de Inovação e na Arena Embarque Digital, no Rec'N'Play."},
+        "step4": {"title": "Mistério", "description": "O que esse ano me reserva ainda é incerto, mas sei que boas coisas virão! Estou focado em evoluir, estudando e trabalhando para me tornar cada vez melhor naquilo que amo."}
+    },
+    "projects": {
+        "title": "Projetos",
+        "fastTrading": {
+            "title": "Site oficial da Fast Trading",
+            "description": "Meu primeiro trabalho como freelancer! Junto com meu colega Pedro, desenvolvemos uma landing page para a empresa Fast Trading Import. Focamos na responsividade para proporcionar uma experiência fluida em qualquer dispositivo e traduzimos todo o conteúdo do site, ampliando seu alcance para um público maior."
+          },
+          "solarCocaCola": {
+            "title": "Sistema da Solar Coca-Cola",
+            "description": "Sistema de Gestão de Preços, projeto feito pelo Squad 34 para a Solar Coca-Cola, pela Residência do Porto Digital. Este é um projeto feito em SpringBoot e React que inclui funcionalidades como CRUD para Clientes, Produtos e Promoções, e também o relacionamento das entidades Clientes e Produtos."
+          },
+          "digitalMenu": {
+            "title": "Cardápio Digital",
+            "description": "Esse é um projeto do canal Dev Point, onde fizemos uma interface web de uma aplicação de cardápio digital. Foi a minha primeira aplicação em React, onde eu aprendi sobre ContextAPI, componentes, rotas e vários outros conceitos desse framework."
+          },
+          "streamingSite": {
+            "title": "Site de Streaming",
+            "description": "Essa foi uma atividade em grupo que eu fiz pela faculdade, onde eu e meus colegas de classe, Flávia e Miguel, criamos um site de streaming com 5 telas sendo elas: Home, Filmes, Séries, Filme Modelo e Série Modelo."
+          }
+    },
+    "contact": {
+      "title": "FALE COMIGO",
+      "invite": "Freelance, parceria, fechar contrato, feedbacks ou apenas uma troca de ideias? Fique à vontade para me chamar ou mandar uma mensagem, sem compromisso! Ah, e se quiser acompanhar mais do meu trabalho, minhas redes sociais estão à disposição!",
+      "form": {"name": "Nome", "email": "Email", "message": "Mensagem", "submit": "Enviar"}
+    }
+}
