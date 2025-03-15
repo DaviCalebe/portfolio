@@ -1,7 +1,7 @@
 {
     "about": {
       "title": "ABOUT ME",
-      "p1": "I'm a software developer passionate about technology, based in Recife-PE, and recently graduated from Embarque Digital, where I discovered my passion for this field. I study English at ABA and I'm always striving to improve, take on challenges, and dive into new projects.",
+      "p1": "I'm a software developer passionate about technology, based in Recife-PE, and recently graduated from Embarque Digital, where I discovered my passion for this field. I'm studying English at ABA and I'm always striving to improve, take on challenges, and dive into new projects.",
       "p2": "I have experience with JavaScript, TypeScript, TailwindCSS, React, Node.js, Java, Python, and ServiceNow. I have worked on projects focused on creating intuitive and well-structured interfaces, ensuring a smooth, responsive, and pleasant user experience."
     },
     "timeline": {
@@ -11,7 +11,7 @@
         "description": "I had just started my ADS course, and everything was new to me, but I quickly fell in love with technology. At Rec'N'Play, I had my first real exposure to the field and realized that this was exactly the path I wanted to follow!"
       },
       "step2": {
-        "title": "Insights and Lessons",
+        "title": "Learnings",
         "description": "I deepened my studies in programming, exploring back-end, front-end, and low-code. It was a year of immersion, where I absorbed as much knowledge as possible!"
       },
       "step3": {
@@ -27,24 +27,24 @@
       "title": "PROJECTS",
       "fastTrading": {
         "title": "Fast Trading's Official Site",
-        "description": ""
+        "description": "My first job as a freelancer! My teammate Pedro and I developed a landing page for Fast Trading Import. We focused on responsiveness providing a smooth experience on any device and translated all the website content, expanding its reach to a larger audience."
       },
       "solarCocaCola": {
         "title": "Solar Coca-Cola's System",
-        "description": ""
+        "description": "A Price Management System, a project developed by Squad34 for Solar Coca-Cola through Porto Digital's Residency. This is a Spring Boot and React project that includes CRUD functionality for clients, products, and promotions, as well as the relationship between clients and products."
       },
       "digitalMenu": {
         "title": "Digital Menu",
-        "description": ""
+        "description": "This is a project from the YouTube channel Dev Point, where we developed a web interface for a digital menu application using React. It was my first React application, where I learned about Context API, components, routes, and many other concepts of this framework."
       },
       "streamingSite": {
         "title": "Streaming Site",
-        "description": ""
+        "description": "This was a group activity I did for college, where my classmates, Flávia and Miguel, and I created a streaming site with five pages: Home, Movies, Series, Movie Model, and Series Model."
       }
     },
     "contact": {
       "title": "LET'S TALK",
-      "invite": "",
+      "invite": "Freelance work, collaboration, closing a deal, feedback, or just a chat? Feel free to call me or send a message—no strings attached! Oh, and if you’d like to see more of my work, my social media is at your disposal!",
       "form": {
         "name": "Name",
         "email": "E-mail",
