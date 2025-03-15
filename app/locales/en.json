@@ -1,3 +1,56 @@
 {
-    "about": {"title": "ABOUT ME"}
-}
+    "about": {
+      "title": "ABOUT ME",
+      "p1": "I'm a software developer passionate about technology, based in Recife-PE, and recently graduated from Embarque Digital, where I discovered my passion for this field. I study English at ABA and I'm always striving to improve, take on challenges, and dive into new projects.",
+      "p2": "I have experience with JavaScript, TypeScript, TailwindCSS, React, Node.js, Java, Python, and ServiceNow. I have worked on projects focused on creating intuitive and well-structured interfaces, ensuring a smooth, responsive, and pleasant user experience."
+    },
+    "timeline": {
+      "title": "THE ROAD SO FAR...",
+      "step1": {
+        "title": "Beginning",
+        "description": "I had just started my ADS course, and everything was new to me, but I quickly fell in love with technology. At Rec'N'Play, I had my first real exposure to the field and realized that this was exactly the path I wanted to follow!"
+      },
+      "step2": {
+        "title": "Insights and Lessons",
+        "description": ""
+      },
+      "step3": {
+        "title": "Results",
+        "description": ""
+      },
+      "step4": {
+        "title": "Undefined",
+        "description": ""
+      }
+    },
+    "projects": {
+      "title": "PROJECTS",
+      "fastTrading": {
+        "title": "Fast Trading's Official Site",
+        "description": ""
+      },
+      "solarCocaCola": {
+        "title": "Solar Coca-Cola's System",
+        "description": ""
+      },
+      "digitalMenu": {
+        "title": "Digital Menu",
+        "description": ""
+      },
+      "streamingSite": {
+        "title": "Streaming Site",
+        "description": ""
+      }
+    },
+    "contact": {
+      "title": "LET'S TALK",
+      "invite": "",
+      "form": {
+        "name": "Name",
+        "email": "E-mail",
+        "message": "Message",
+        "submit": "SUBMIT"
+      }
+    }
+  }
+  
