@@ -52,17 +52,17 @@ const Intro = () => {
   };
 
   return (
-    <section className="bg-base grid md:grid-cols-2 place-items-center p-12 gap-10">
+    <section className="bg-base grid grid-rows-[auto_auto] place-items-center gap-8 md:grid-cols-2 md:grid-rows-1 lg: p-10 xl:p-12 xl:gap-10">
       <div className="flex flex-col items-center text-center gap-2">
         <h1 
-          className="text-[96px] font-light text-primary cursor-pointer"
+          className=" font-light text-primary cursor-pointer whitespace-nowrap text-5xl md:text-5xl lg:text-7xl"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
           {combinedEffect("<Davi Calebe/>")}
         </h1>
-        <p 
-          className="text-4xl text-secondary cursor-pointer"
+        <p
+          className="text-3xl text-secondary cursor-pointer lg:text-4xl"
           onMouseEnter={() => setHovered(true)}
           onMouseLeave={() => setHovered(false)}
         >
@@ -72,21 +72,21 @@ const Intro = () => {
         <div className="flex gap-5 mt-4">
           <button
             onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=18FH_bWyRGCCaerdntXZsPgoWZsE0reJZ"}
-            className="flex items-center gap-4 text-3xl bg-transparent hover:bg-primary text-secondary border border-primary px-6 py-2 rounded-lg cursor-pointer"
+            className="flex items-center gap-4  bg-transparent hover:bg-primary text-secondary border border-primary text-2xl px-4 py-2 rounded-lg cursor-pointer lg:text-3xl lg:px-6 lg:py-2"
           >
-            <img src={brazilflag} alt="brazil-flag" className="w-10 h-10" /> CV
+            <img src={brazilflag} alt="brazil-flag" className="w-8 h-8 lg:w-10 lg:h-10" /> CV
           </button>
           <button
             onClick={() => window.location.href = "https://drive.google.com/uc?export=download&id=1_2R6twVKEHGEQ2Yp_zBaXo0XMPyIakZL"}
-            className="flex items-center gap-4 text-3xl bg-transparent hover:bg-primary text-secondary border border-primary px-6 py-2 rounded-lg cursor-pointer"
+            className="flex items-center gap-4 bg-transparent hover:bg-primary text-secondary border border-primary text-2xl px-4 py-2 rounded-lg cursor-pointer lg:text-3xl lg:px-6 lg:py-2"
           >
-            <img src={usaflag} alt="usa-flag" className="w-10 h-10" /> CV
+            <img src={usaflag} alt="usa-flag" className="w-8 h-8 lg:w-10 lg:h-10" /> CV
           </button>
         </div>
       </div>
 
       <div className="relative flex">
-        <motion.div ref={constraintsRef} className="bg-tertiary w-[600px] h-[600px] rounded-full">
+        <motion.div ref={constraintsRef} className="bg-tertiary w-[500px] h-[500px] rounded-full md:w-[350px] md:h-[350px] lg:w-[400px] lg:h-[400px] xl:w-[500px] xl:h-[500px]">
           <motion.div
             drag
             dragConstraints={constraintsRef}

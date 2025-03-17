@@ -88,7 +88,7 @@ const Projects = ({ t }: { t: (key:string) => string}) => {
                 href={selectedProject.codeLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black hover:bg-[rgba(0,0,0,0.7)] text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
+                className="bg-black hover:bg-[rgba(0,0,0,0.7)] text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center whitespace-nowrap"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
@@ -103,7 +103,7 @@ const Projects = ({ t }: { t: (key:string) => string}) => {
                 href={selectedProject.demoLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black hover:bg-[rgba(0,0,0,0.7)] text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
+                className="bg-black hover:bg-[rgba(0,0,0,0.7)] text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center whitespace-nowrap"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
@@ -118,7 +118,7 @@ const Projects = ({ t }: { t: (key:string) => string}) => {
                 href={selectedProject.linkedinPost}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-blue-600 hover:bg-blue-800 text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center"
+                className="bg-blue-600 hover:bg-blue-800 text-white text-2xl w-full h-12 rounded-lg flex items-center justify-center whitespace-nowrap"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}
