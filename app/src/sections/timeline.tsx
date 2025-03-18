@@ -25,13 +25,13 @@ const Timeline = ({ t }: { t: (key:string) => string}) => {
 
     return (
         <section className="px-8 py-10">
-            <h1 className="text-5xl text-center text-tertiary uppercase py-8">{t("timeline.title")}</h1>
+            <h1 className="text-4xl text-center text-tertiary uppercase py-8 md:text-5xl">{t("timeline.title")}</h1>
 
-            <div className="mx-auto grid grid-cols-9">
+            <div className="mx-auto grid grid-cols-4 md:grid-cols-9">
 
                 {/* ====================== STEP 1 ====================== */}
 
-                <div className="appear-left col-span-4 w-full h-full">
+                <div className="appear-left hidden md:block md:col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step1.title")}</h1>
                         <p className="text-tertiary">{t("timeline.step1.description")}</p>
@@ -46,11 +46,18 @@ const Timeline = ({ t }: { t: (key:string) => string}) => {
                     </div>
                 </div>
 
-                <div className="col-span-4 w-full h-full"></div>
+                <div className="hidden md:block md:col-span-4 w-full h-full"></div>
+
+                <div className="appear-right col-span-3 py-5 md:hidden w-full h-full">
+                    <div className="w-full h-full rounded-md border border-tertiary p-4">
+                        <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step1.title")}</h1>
+                        <p className="text-tertiary">{t("timeline.step1.description")}</p>
+                    </div>
+                </div>
 
                 {/* ====================== STEP 2 ====================== */}
 
-                <div className="col-span-4 w-full h-full"></div>
+                <div className="hidden md:block md:col-span-4 w-full h-full"></div>
                 
                 <div className="relative col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-1 bg-tertiary"></div>
@@ -60,7 +67,7 @@ const Timeline = ({ t }: { t: (key:string) => string}) => {
                     </div>
                 </div>
 
-                <div className="appear-right col-span-4 w-full h-full">
+                <div className="appear-right col-span-3 py-5 md:py-0 md:col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step2.title")}</h1>
                         <p className="text-tertiary">{t("timeline.step2.description")}</p>
@@ -69,7 +76,7 @@ const Timeline = ({ t }: { t: (key:string) => string}) => {
 
                 {/* ====================== STEP 3 ====================== */}
                 
-                <div className="appear-left col-span-4 w-full h-full">
+                <div className="appear-left hidden md:block md:col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step3.title")}</h1>
                         <p className="text-tertiary">{t("timeline.step3.description")}</p>
@@ -84,11 +91,18 @@ const Timeline = ({ t }: { t: (key:string) => string}) => {
                     </div>
                 </div>
 
-                <div className="col-span-4 w-full h-full"></div>
+                <div className="hidden md:block md:col-span-4 w-full h-full"></div>
+
+                <div className="appear-right col-span-3 py-5 md:hidden w-full h-full">
+                    <div className="w-full h-full rounded-md border border-tertiary p-4">
+                        <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step3.title")}</h1>
+                        <p className="text-tertiary">{t("timeline.step3.description")}</p>
+                    </div>
+                </div>
 
                 {/* ====================== STEP 4 ====================== */}
 
-                <div className="col-span-4 w-full h-full"></div>
+                <div className="hidden md:block md:col-span-4 w-full h-full"></div>
                 
                 <div className="relative col-span-1 w-full h-full flex justify-center items-center">
                     <div className="h-full w-1 bg-tertiary"></div>
@@ -98,7 +112,7 @@ const Timeline = ({ t }: { t: (key:string) => string}) => {
                     </div>
                 </div>
 
-                <div className="appear-right col-span-4 w-full h-full">
+                <div className="appear-right col-span-3 py-5 md:py-0 md:col-span-4 w-full h-full">
                     <div className="w-full h-full rounded-md border border-tertiary p-4">
                         <h1 className="text-tertiary text-2xl font-semibold">{t("timeline.step4.title")}</h1>
                         <p className="text-tertiary">{t("timeline.step4.description")}</p>
