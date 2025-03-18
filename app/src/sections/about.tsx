@@ -14,12 +14,12 @@ const About = ({ t }: { t: (key:string) => string}) => {
               <circle cx="1500" cy="800" r="30" fill="black" />
           </svg>
           
-          <div className="relative flex flex-col self-start mt-15 gap-19 text-center">
-              <h1 className="appear text-5xl font-semibold uppercase max-w-[800px] z-10">{t("about.title")}</h1>
+          <div className="relative flex flex-col self-start mt-10 gap-19 text-center lg:mt-15">
+              <h1 className="appear text-4xl font-semibold uppercase max-w-[800px] z-10 sm:text-5xl">{t("about.title")}</h1>
               
-              <p className="text-3xl font-medium max-w-[800px] z-10">{t("about.p1")}</p>
+              <p className="text-2xl font-medium max-w-[800px] z-10 sm:text-3xl">{t("about.p1")}</p>
               
-              <p className="text-3xl font-medium max-w-[800px] z-10">{t("about.p2")}</p>
+              <p className="text-2xl font-medium max-w-[800px] z-10 sm:text-3xl">{t("about.p2")}</p>
           </div>
           
           <svg className="absolute bottom-0 -mb-px z-10 text-base" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
