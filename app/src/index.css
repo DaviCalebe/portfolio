@@ -5,6 +5,10 @@
   letter-spacing: 2px;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 @keyframes appear-left {
   from {
     opacity: 0;
