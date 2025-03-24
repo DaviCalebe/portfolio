@@ -7,18 +7,18 @@ const Projects = ({ t }: { t: (key:string) => string}) => {
   const [selectedProject, setSelectedProject] = useState<Project>(projectsData[0]);
 
   return (
-    <section className="bg-secondary text-white grid grid-cols-2 gap-10 min-h-[45rem] h-screen p-8">
-      <div className="grid grid-rows-2">
+    <section className="bg-secondary text-white grid grid-rows-[auto, auto] gap-10 min-h-[45rem] h-auto p-8 lg:grid-cols-2 lg:h-screen">
+      <div className="grid grid-rows-1 h-auto lg:grid-rows-2">
         <div className="flex flex-col">
           <div className="flex justify-between border-b-2 border-black">
-            <h1 className="appear text-5xl uppercase">{t("projects.title")}</h1>
-            <h1 className="appear text-5xl">{projectsData.length}</h1>
+            <h1 className="appear text-4xl md:text-5xl lg:text-6xl uppercase">{t("projects.title")}</h1>
+            <h1 className="appear text-4xl md:text-5xl lg:text-6xl">{projectsData.length}</h1>
           </div>
           <ul className="py-2 space-y-2">
             {projectsData.map((project, index) => (
               <motion.li
                 key={index}
-                className="appear-left text-2xl border-b-2 border-black p-2 w-full overflow-hidden whitespace-nowrap text-emotion.llipsis"
+                className="appear-left text-xl md:text-2xl border-b-2 border-black w-full overflow-hidden whitespace-nowrap text-emotion.llipsis lg:p-2"
               >
                 <motion.button
                   initial={{marginLeft: "-3.25rem"}}
@@ -38,7 +38,7 @@ const Projects = ({ t }: { t: (key:string) => string}) => {
         <AnimatePresence mode="wait">
           <motion.div
             key={t(`projects.${selectedProject.id}.title`)}
-            className="appear flex flex-col gap-4"
+            className="hidden appear lg:flex flex-col gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
@@ -63,7 +63,7 @@ const Projects = ({ t }: { t: (key:string) => string}) => {
       </div>
 
       <div
-        className="appear relative border border-black w-full h-11/12 rounded-se-3xl rounded-es-3xl flex items-end overflow-hidden"
+        className="lg:appear relative border border-black w-full h-[500px] rounded-se-3xl rounded-es-3xl flex items-end overflow-hidden lg:h-11/12"
         style={{
           backgroundImage: `url(/assets/${selectedProject.image})`,
           backgroundSize: "cover", 
