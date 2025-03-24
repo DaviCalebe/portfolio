@@ -26,21 +26,21 @@ const Contact = ({ t }: { t: (key:string) => string}) => {
 
   return (
     <footer className="flex flex-col h-[80vh]">
-        <h1 className="bg-base text-secondary text-6xl inline-block mx-auto text-center p-4 -mt-8 rounded-lg">{t("contact.title")}</h1>
-        <div className="flex justify-center items-center">
+        <h1 className="bg-base text-secondary text-4xl md:text-5xl lg:text-6xl inline-block mx-auto text-center p-4 -mt-8 rounded-lg">{t("contact.title")}</h1>
+        <div className="flex flex-col md:flex-row justify-center items-center">
             <div className="flex flex-1 justify-center items-center text-justify p-15">
-                <p className="appear-left text-2xl font-bold text-secondary relative before:content-[''] before:absolute before:w-20 before:h-[5px] before:bg-secondary before:-top-2 before:left-0 hover:before:w-full before:transition-all before:duration-500 before:ease-out">{t("contact.invite")}</p>
+                <p className="appear-left text-xl font-bold text-secondary relative before:content-[''] before:absolute before:w-20 before:h-[5px] before:bg-secondary before:-top-2 before:left-0 hover:before:w-full before:transition-all before:duration-500 before:ease-out">{t("contact.invite")}</p>
             </div>
 
             <div className="bg-secondary w-px h-11/12"></div>
             
-            <div className="flex-1 p-5">
+            <div className="flex-1 p-5 w-8/12">
               <form
                 onSubmit={handleSubmit(onSubmit)}
                 className="max-w-xl mx-auto p-4 space-y-4 text-secondary text-xl rounded-lg"
               >
                 <div className="flex flex-col gap-1">
-                  <label className="appear block text-4xl">{t("contact.form.name")}</label>
+                  <label className="appear block text-3xl lg:text-4xl">{t("contact.form.name")}</label>
                   <input
                     {...register("name")}
                     className="appear-right w-full p-2 bg-[#191919] text-white rounded"
@@ -62,7 +62,7 @@ const Contact = ({ t }: { t: (key:string) => string}) => {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <label className="appear block text-4xl">{t("contact.form.email")}</label>
+                  <label className="appear block text-3xl lg:text-4xl">{t("contact.form.email")}</label>
                   <input
                     {...register("email")}
                     type="email"
@@ -85,7 +85,7 @@ const Contact = ({ t }: { t: (key:string) => string}) => {
                 </div>
 
                 <div className="flex flex-col gap-1">
-                  <label className="appear block text-4xl">{t("contact.form.message")}</label>
+                  <label className="appear block text-3xl lg:text-4xl">{t("contact.form.message")}</label>
                   <textarea
                     {...register("message")}
                     className="appear-right w-full h-48 p-2 bg-[#191919] text-white rounded"
@@ -108,7 +108,7 @@ const Contact = ({ t }: { t: (key:string) => string}) => {
 
                 <button
                   type="submit"
-                  className="text-4xl w-full p-2 bg-[#191919] hover:bg-[rgba(25,25,25,0.3)] rounded cursor-pointer"
+                  className="text-3xl lg:text-4xl w-full p-2 bg-[#191919] hover:bg-[rgba(25,25,25,0.3)] rounded cursor-pointer"
                 >
                   {t("contact.form.submit")}
                 </button>

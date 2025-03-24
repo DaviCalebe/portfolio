@@ -7,7 +7,7 @@ const Projects = ({ t }: { t: (key:string) => string}) => {
   const [selectedProject, setSelectedProject] = useState<Project>(projectsData[0]);
 
   return (
-    <section className="bg-secondary text-white grid grid-rows-[auto, auto] gap-10 min-h-[45rem] h-auto p-8 lg:grid-cols-2 lg:h-screen">
+    <section className="bg-secondary text-white grid grid-rows-[auto, auto] gap-10 min-h-[45rem] h-auto p-8 pb-10 lg:pb-0 lg:grid-cols-2 lg:h-screen">
       <div className="grid grid-rows-1 h-auto lg:grid-rows-2">
         <div className="flex flex-col">
           <div className="flex justify-between border-b-2 border-black">
@@ -44,7 +44,7 @@ const Projects = ({ t }: { t: (key:string) => string}) => {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.3 }}
           >
-            <p className="text-2xl">{t(`projects.${selectedProject.id}.description`)}</p>
+            <p className="text-2xl max-h-56 overflow-hidden text-ellipsis break-all line-clamp-6">{t(`projects.${selectedProject.id}.description`)}</p>
             <div className="flex justify-center gap-5 bg-[rgba(81,17,133,0.4)] px-5 py-1 w-auto rounded" style={{ width: "fit-content"}}>
               {selectedProject.stacks.map((stack, i) => (
                 <motion.img
